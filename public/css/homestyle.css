@@ -61,11 +61,26 @@
 			background: #DAEEDF;
 			padding: 10px;
 	}
+
+	span.header-text{
+		font-size: 2em;
+		padding: 5px;
+	}
 	
 /* Content - Intro for each page */
 
 	div.content {
-			border: 1px;
+		background: #DAEEDF;
+		padding: 10px;
+		display: flex;
+			
+	}
+
+	div.content-aside {
+		width: 49%;
+		float: left;
+		text-align: center;
+		padding: 20px;
 	}
 	
 /* Section - All */
@@ -83,13 +98,12 @@
 /* Section - Main */
 	
 	section.main{
-			margin-top: 20px;
-			margin-bottom: 30px;
-			padding: 0;
+			padding: 10px;
+			display: flex;
 	}
 	
 	section.main aside{
-			width: 45%;
+			width: 49%;
 			float: left;
 			text-align: center;
 			padding: 0 20px;
@@ -156,7 +170,7 @@
 	
 	nav > ul > li > a {
 			width: auto;
-			padding: 10px 20px 15px 20px;
+			padding: 10px 20px;
 	}
 
 /* Buttons */
