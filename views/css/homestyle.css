@@ -1,0 +1,249 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+	body{ 
+			font-family: 'Merriweather Sans', sans-serif; 
+			font-size: 16px; 
+			font-weight: 300; 
+			color: #555555; 
+			margin: 0; 
+			padding: 0; 
+	}
+	
+	#page{
+			max-width:1200px;
+			margin: 0 auto;
+			position: relative;
+	}
+		
+/* Text */
+
+	h1{
+			margin: 0 0 1em 0;
+			font-size: 2em;
+			font-weight: 700;
+	}
+		
+	h2{
+			margin: 0 0 0.5em 0;
+			font-size: 1.6em;
+			font-weight: 700;
+			line-height: 1.1em;
+	}
+
+	h3{
+			margin: 0 0 0.5em 0;
+			font-size: 1.3em;
+			font-weight: 700;
+	}
+		
+	h4{
+			margin: 0 0 1.5em 0;
+			font-size: 1em;
+			font-weight: 700;
+	}
+		
+	p{
+			margin: 0 0 1em 0;
+	}
+	
+	a{
+			color: #000000;
+	}
+	
+	a:visited{
+			color: #000000;
+	}
+	
+	
+/* Header */
+	
+	header{
+			height: 400px;
+			background: #DAEEDF no-repeat center bottom;
+			position: relative;
+	}
+	
+	header a.logo{
+			z-index: 1; /* changes stacking order */
+			position: absolute;
+			display: block;
+			width: 160px;
+			height: 66px;
+			background: url(../Images/logo_long.png) no-repeat 0 0;
+			background-size: contain;
+			top: 15px;
+			left: 20px;
+	}
+	
+	
+	header div.aboutus{
+			position: absolute;
+			width: 42%;
+			top: 130px;
+			left: 20px;
+	}
+	
+	header div.aboutus h1{
+			line-height: 1em;
+			margin: 0 0 30px 0;
+			color: #000
+	}
+
+	
+	
+/* Section - All */
+
+	section{
+			padding: 0 30px;
+	}
+	
+	section::after {
+		content:'';
+		display: block;
+		clear: both;
+	}
+
+/* Section - Main */
+	
+	section.main{
+			margin-top: 20px;
+			margin-bottom: 30px;
+			padding: 0;
+	}
+	
+	section.main aside{
+			width: 29%;
+			float: left;
+			text-align: center;
+			padding: 0 20px;
+	}
+	
+	section.main .content{
+			margin: 15px;
+			padding-top: 85px;
+	}
+	
+	section.main aside h3 a {
+			color: #000;
+			text-decoration: none;
+	}
+	
+	section.main aside h3 a:hover {
+			text-decoration: underline;
+	}
+	
+/* Navigation */
+
+	nav {
+			background-color: #FFF;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			padding: 50px 0 0 0;
+			width: 100%;
+	}
+	
+	nav::after {
+			content:'';
+			display: block;
+			clear: both;
+	}
+	
+	nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0px;
+	}
+	
+	nav ul li:hover > ul {
+			display: block;
+	}
+	
+	nav ul li a {
+			display: inline-block;
+			color: #000;
+			padding: 10px 20px;
+			text-decoration: none;
+			width: 125px;
+			position: relative;
+	}
+	
+	
+	nav ul li a:hover {
+			background-color: rgba(0,0,0,.1);
+	}
+
+	
+/* Top Level */
+
+	/* Took out when removed logo from previous coursework
+	nav > ul {
+			padding-left: 200px;
+	}
+	*/
+	
+	nav > ul > li {
+			float: left;
+	}
+	
+	nav > ul > li > a {
+			width: auto;
+			padding: 10px 20px 15px 20px;
+	}
+
+/* Buttons */
+
+	.button {
+			border: 2px solid #DAEEDF;
+			color: #555555;
+			padding: 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+	}
+
+	.button:hover {
+			background-color: #DAEEDF;
+			color: black;
+	}
+	
+	.campus {
+		width: 30%;
+	}
+	
+	.partnership {
+		width: 21%;
+		height: 60px;
+	}
+	
+	
+/* Footer */
+
+	footer {
+			font-size: .8em;
+			margin: 40px;
+			color: #999;
+	}
+	
+	footer .content {
+			display: inline;
+	}
+	
+	footer a {
+			margin-left: 30px;
+			color: #777;
+	}
+	
+	footer a:visited {
+			color: #777;
+	}
+	
+	footer a:hover {
+			color: #000;
+	}
