@@ -1,5 +1,3 @@
-/* CSS Document for Screens */
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 	body{ 
@@ -60,38 +58,15 @@
 /* Header */
 	
 	header{
-			height: 400px;
-			background: #DAEEDF no-repeat center bottom;
-			position: relative;
+			background: #DAEEDF;
+			padding: 10px;
 	}
 	
-	header a.logo{
-			z-index: 1; /* changes stacking order */
-			position: absolute;
-			display: block;
-			width: 160px;
-			height: 66px;
-			background: url(../Images/logo_long.png) no-repeat 0 0;
-			background-size: contain;
-			top: 15px;
-			left: 20px;
-	}
-	
-	
-	header div.aboutus{
-			position: absolute;
-			width: 42%;
-			top: 130px;
-			left: 20px;
-	}
-	
-	header div.aboutus h1{
-			line-height: 1em;
-			margin: 0 0 30px 0;
-			color: #000
-	}
+/* Content - Intro for each page */
 
-	
+	div.content {
+			border: 1px;
+	}
 	
 /* Section - All */
 
@@ -114,7 +89,7 @@
 	}
 	
 	section.main aside{
-			width: 29%;
+			width: 45%;
 			float: left;
 			text-align: center;
 			padding: 0 20px;
@@ -138,10 +113,9 @@
 
 	nav {
 			background-color: #FFF;
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			padding: 50px 0 0 0;
+			border-style: solid;
+			border-width: 0px 0px 2px 0px;
+			border-color: #DAEEDF;
 			width: 100%;
 	}
 	
@@ -164,7 +138,7 @@
 	nav ul li a {
 			display: inline-block;
 			color: #000;
-			padding: 10px 20px;
+			padding: 10px;
 			text-decoration: none;
 			width: 125px;
 			position: relative;
@@ -172,17 +146,9 @@
 	
 	
 	nav ul li a:hover {
-			background-color: rgba(0,0,0,.1);
+			background-color: #DAEEDF;
 	}
 
-	
-/* Top Level */
-
-	/* Took out when removed logo from previous coursework
-	nav > ul {
-			padding-left: 200px;
-	}
-	*/
 	
 	nav > ul > li {
 			float: left;
@@ -227,8 +193,9 @@
 
 	footer {
 			font-size: .8em;
-			margin: 40px;
-			color: #999;
+			color: rgb(87, 87, 87);
+			background: #DAEEDF;
+			padding: 10px;
 	}
 	
 	footer .content {
